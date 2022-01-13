@@ -15,6 +15,8 @@ router.get('/auth/google',authController.authGoogle);
 
 router.get("/auth/google/callback" , authController.authGoogleCallBack);
 
-router.post('/order',homeController.postOrder);
+router.post('/confirm',homeController.postOrder);
+
+
 
 module.exports = router;
