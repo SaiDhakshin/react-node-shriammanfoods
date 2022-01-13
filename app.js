@@ -49,7 +49,7 @@ app.use(express.urlencoded());
 // app.use(cookieParser());
 
 app.use(cors({
-  origin : 'http://localhost:3000',
+  origin : process.env.PORT || 'http://localhost:3000',
   methods : 'GET,POST,PUT,DELETE',
   credentials : true
 }));
