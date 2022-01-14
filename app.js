@@ -68,6 +68,12 @@ app.use(function(req, res, next) {
 app.use(passport.initialize());
 app.use(passport.session());
 
+app.use(express.static(path.join(__dirname , "/client/build")));
+
+app.get("*",(req,res) => {
+  res.sendFile(path.join(__dirname,"/client/build","index.html"));
+})
+
 
 
 
