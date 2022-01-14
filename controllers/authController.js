@@ -1,4 +1,4 @@
-require('../util/passport-OAuth');
+require('../util/passport-Oauth');
 const passport = require('passport');
 
 exports.onLoginPass = (req,res) => {
