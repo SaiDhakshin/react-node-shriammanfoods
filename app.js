@@ -10,7 +10,7 @@ const bodyParser = require("body-parser");
 const cookieSession = require('cookie-session');
 const cookieParser = require('cookie-parser');
 
-require('./util/passport-OAuth');
+require('./util/passport-Oauth');
 
 app.use(cookieSession({
   name : 'session' ,
